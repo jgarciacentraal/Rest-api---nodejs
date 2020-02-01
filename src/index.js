@@ -13,7 +13,8 @@ app.use(express.json())  // recibir json
 
 // routes
 app.use(require('./routes/index'))
-app.use('/api/movies',require('./routes/movies')) //establezco raiz de ruta
+app.use('/api/movies',require('./routes/movies'))
+app.use('/api/users',require('./routes/users')) //establezco raiz de ruta
 
 //server
 app.listen(port, () => {
